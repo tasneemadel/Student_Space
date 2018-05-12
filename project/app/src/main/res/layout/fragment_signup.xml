@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.firebase.signupFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/name"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:ems="10"
+                    android:hint="Your Name"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="College Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:password="true"
+                    android:text=""
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:password="true"
+                    android:text=""
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="  Student Academic Level"
+
+                    android:textColor="@color/holo_blue_light"
+                    android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:autofillHints="Choose your academic level"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text=" Engineering Department"
+
+                    android:textColor="@color/holo_blue_light"
+                    android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Choose your department"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="  Student Status"
+
+                    android:textColor="@color/holo_blue_light"
+                    android:textSize="14sp" />
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:autofillHints="Choose Your status in study group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"
+                    />
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Sign up"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+                <ProgressBar
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/progressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
